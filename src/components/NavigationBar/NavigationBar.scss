@@ -1,0 +1,77 @@
+@import "../../mixins.scss";
+
+$layout-primary-color:#e4ecff;
+
+.navigation-container{
+    display: inline-block;
+    position: absolute;
+    left: -250px;
+    top: 0px;
+    transition: 300ms all;
+    width: 250px;
+    height: 100%;
+    z-index: 10;
+    background-color: $layout-primary-color;
+    box-shadow: 0px 4px 10px 0px rgba($color: #000000, $alpha: 0.25);
+    border-radius: 0px 20px 20px 0px;
+
+    &.opened-sidebar{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transition: 300ms all;
+        z-index: 10;
+        width: 250px;
+        height: 100%;
+        
+    }
+
+    @include lg{
+        position: static;
+        width: 250px;
+        height: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    
+
+    .logo-container{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        img{
+            width: 150px;
+            height: 50px;
+        }
+    }
+
+    .navitem-container{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 100px;
+
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+
+.hamburger-container{
+    
+    div{
+        z-index: 20;
+    }
+
+    @include lg{
+        display: none;
+    }
+}

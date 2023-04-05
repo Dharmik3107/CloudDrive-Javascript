@@ -1,0 +1,35 @@
+@import "../../mixins.scss";
+
+$button-default-color:rgb(255, 176, 176);
+$button-google-color:rgb(157, 157, 255);
+$layout-primary-color:#e4ecff;
+$open-sans-font:'Open Sans', sans-serif;
+
+.navfield-container{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+    gap: 20px;
+    background-color: transparent;
+    font-family: $open-sans-font;
+    transition: 300ms all ease-in-out;
+
+    &:hover{
+        background-color: $button-google-color;
+        cursor: pointer;
+    }
+
+    img{
+        width: 22px;
+        height: 22px;
+    }
+
+    h6{
+        font-size: 18px;
+        color: $button-default-color;
+        font-weight: 600;
+    }
+}

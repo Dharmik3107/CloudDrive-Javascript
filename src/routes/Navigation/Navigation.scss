@@ -1,0 +1,34 @@
+@import "../../mixins.scss";
+
+$button-default-color:rgb(255, 176, 176);
+$button-google-color:rgb(157, 157, 255);
+$layout-primary-color:#e4ecff;
+$open-sans-font:'Open Sans', sans-serif;
+
+.main-body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $layout-primary-color;
+    font-family: $open-sans-font;
+    overflow: hidden;
+
+    .outlet-section{
+        width: 100%;
+        height: calc(100% - 50px);
+        background-color: white;
+        position: absolute;
+        top: 50px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+        @include lg{
+            width: calc(100% - 250px);
+            height: calc(100% - 50px);
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 0px;
+        }
+    }
+}   
