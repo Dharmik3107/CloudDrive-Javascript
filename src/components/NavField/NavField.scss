@@ -16,12 +16,13 @@ $open-sans-font:'Open Sans', sans-serif;
     background-color: transparent;
     font-family: $open-sans-font;
     transition: 300ms all ease-in-out;
+    outline: none;
+    border: none;
+    cursor: pointer;
 
     &:hover{
         background-color: $button-google-color;
-        cursor: pointer;
     }
-
     img{
         width: 22px;
         height: 22px;

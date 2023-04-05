@@ -18,15 +18,15 @@ const NavigationBar = () => {
 				<div className="navitem-container">
 					{iconArray.map((element, index) => {
 						return (
-							<Link to={element.link} className="link">
-								<NavField key={index} icon={element.icon} text={element.title} />
+							<Link to={element.link} key={index} className="link">
+								<NavField icon={element.icon} text={element.title} />
 							</Link>
 						);
 					})}
 				</div>
 			</nav>
 			<div className="hamburger-container">
-				<Hamburger color="#000" toggled={isOpen} toggle={setOpen} direction="left" label="show menu" duration={0.4} />
+				<Hamburger size="20" color="#000" toggled={isOpen} toggle={setOpen} direction="left" label="show menu" duration={0.4} />
 			</div>
 		</>
 	);
