@@ -1,0 +1,25 @@
+@import "../../mixins.scss";
+
+$button-default-color:rgb(255, 176, 176);
+$button-google-color:rgb(157, 157, 255);
+$layout-primary-color:#e4ecff;
+$open-sans-font:'Open Sans', sans-serif;
+
+.dot-menu-container{
+    position: absolute;
+    // top: 180px;
+    // left: 40px;
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    -webkit-box-shadow: 2px 0px 30px -1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 0px 30px -1px rgba(0,0,0,0.25);
+    box-shadow: 2px 0px 30px -1px rgba(0,0,0,0.25);
+    border-radius:5px ;
+    z-index: 20;
+    // margin: 0px auto;
+
+    @include md{
+
+    }
+}
