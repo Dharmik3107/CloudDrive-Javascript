@@ -8,10 +8,11 @@ $open-sans-font:'Open Sans', sans-serif;
 .add-file-card-container{
     width: auto;
     height: auto;
+    min-height: 190px;
     max-height: 200px;
     background-color: $layout-primary-color;
     border-radius: 10px;
-    position: relative;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +37,7 @@ $open-sans-font:'Open Sans', sans-serif;
         justify-content: space-between;
         align-items: flex-end;
         margin-top: 10px;
+        position: relative;
 
         p{
             width: 95%;

@@ -20,13 +20,13 @@ const DotMenu = () => {
 			const windowWidth = window.innerWidth;
 			const windowHeight = window.innerHeight;
 
-			if (bottom + 180 > windowHeight) {
+			if (bottom + 200 > windowHeight) {
 				element.style.bottom = `40px`;
 			} else {
-				element.style.top = `180px`;
+				element.style.top = `40px`;
 			}
 
-			if (right + 50 > windowWidth) {
+			if (right + 100 > windowWidth) {
 				element.style.right = `${0 + windowWidth - right - 1}px`;
 			} else {
 				element.style.left = `40px`;
