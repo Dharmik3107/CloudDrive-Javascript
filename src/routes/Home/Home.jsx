@@ -3,6 +3,7 @@ import "./Home.scss";
 import FileCard from "../../components/AddFileCard/FileCard";
 import RecentContainer from "../../components/RecentContainer/RecentContainer";
 import FoldersContainer from "../../components/FoldersContainer/FoldersContainer";
+import FilesContainer from "../../components/FilesContainer/FilesContainer";
 
 const Home = () => {
 	return (
@@ -12,6 +13,8 @@ const Home = () => {
 			<RecentContainer />
 			<h5 className="category-heading">Folders</h5>
 			<FoldersContainer />
+			<h5 className="category-heading">Files</h5>
+			<FilesContainer />
 		</div>
 	);
 };

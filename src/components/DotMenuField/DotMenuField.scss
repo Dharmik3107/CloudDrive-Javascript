@@ -21,8 +21,13 @@ $open-sans-font:'Open Sans', sans-serif;
     font-size: 15px;
     transition: 250ms all ease-in-out;
     
+    &:first-child{
+        border-radius:  5px 5px 0px 0px;
+    }
+
     &:last-child{
         border: none;
+        border-radius: 0px 0px 5px 5px;
     }
     &:hover{
         background-color: $button-google-color;

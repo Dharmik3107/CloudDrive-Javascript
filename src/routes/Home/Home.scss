@@ -7,9 +7,11 @@ $open-sans-font:'Open Sans', sans-serif;
 
 .home-container{
     width: 100%;
-    height: fit-content;
+    height: 100%;
     padding: 10px 10px;
     font-family: $open-sans-font;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 
     @include lg{
         padding: 10px 20px;
