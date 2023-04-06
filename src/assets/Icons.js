@@ -44,6 +44,10 @@ export const menuIcons = [
 		title: "Rename",
 	},
 	{
+		icon: Star,
+		title: "Add to Starred",
+	},
+	{
 		icon: Details,
 		title: "Details",
 	},

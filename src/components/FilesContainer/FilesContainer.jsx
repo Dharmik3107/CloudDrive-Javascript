@@ -11,6 +11,7 @@ const FilesContainer = () => {
 			<FileCard />
 			<FileCard />
 			<FileCard />
+			<FileCard />
 		</div>
 	);
 };
